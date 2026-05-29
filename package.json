@@ -5,6 +5,6 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "node --test hooks/test/"
+    "test": "node --test hooks/test/*.test.mjs"
   }
 }

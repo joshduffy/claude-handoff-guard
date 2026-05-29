@@ -94,7 +94,7 @@ cp rules/*            ~/.claude/rules/
 bash ~/.claude/scripts/install-git-hooks.sh
 
 # 4. Verify
-node --test ~/.claude/hooks/test/
+node --test ~/.claude/hooks/test/*.test.mjs
 ```
 
 ## Philosophy: fail open, never trap the session
