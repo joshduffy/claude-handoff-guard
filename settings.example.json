@@ -1,0 +1,33 @@
+{
+  "//": "Merge these hook entries into your ~/.claude/settings.json. Keep any existing entries under each event; the arrays are additive.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command", "command": "node ~/.claude/hooks/handoff-write-guard.mjs" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node ~/.claude/hooks/handoff-write-guard.mjs" }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node ~/.claude/hooks/handoff-session-start.mjs" }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node ~/.claude/hooks/handoff-stop-gate.mjs" }
+        ]
+      }
+    ]
+  }
+}
