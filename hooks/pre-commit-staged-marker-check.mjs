@@ -2,7 +2,7 @@
 // git pre-commit hook on ~/.claude: blocks commits whose staged handoff-*.md
 // files contain ownership markers from more than one session_id.
 //
-// Backstops the named-file convention in session-handoff-mandatory.md.
+// Backstops the named-file convention in rules/session-handoff.md.
 // When `git add -A` accidentally sweeps up another session's uncommitted
 // handoff, this catches it before the misleading attribution lands.
 //

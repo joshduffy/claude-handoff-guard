@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Stop hook: the "suspenders" for session-handoff-mandatory.md.
+// Stop hook: the "suspenders" for rules/session-handoff.md.
 // Once per session, if the project has uncommitted work AND this session owns
 // no handoff in the project memory dir, emit a single non-blocking reminder.
 //
