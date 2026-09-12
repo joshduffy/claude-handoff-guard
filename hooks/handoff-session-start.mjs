@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // SessionStart hook: surfaces existing handoffs in the project memory dir so the
-// session-start discovery steps in session-handoff-mandatory.md become a shown
+// session-start discovery steps in rules/session-handoff.md become a shown
 // fact instead of model-discipline. Also flags sibling topic-slug overlaps
 // (same first two non-stopword tokens), the concurrent-session awareness case.
 // Read-only. Fails open on any internal error.

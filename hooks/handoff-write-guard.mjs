@@ -107,7 +107,6 @@ async function main() {
   // Accept BOTH Claude Code schema (Write/Edit/Bash) and gemini CLI schema
   // (write_file/replace/run_shell_command). Migrating one without the other
   // silently disables the hook for whichever client is on the missing schema.
-  // See lessons_tooling.md "Hook tool-schema migrations must accept BOTH schemas".
   if (tool === 'write_file' || tool === 'Write') {
     targetPath = input.tool_input?.file_path ?? '';
     newContent = input.tool_input?.content ?? '';
